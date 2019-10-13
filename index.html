@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Crystal Collector</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <script src="assets/javascript/game.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+
+        <div class="row">
+            <h1 class="col-md-4" style="background-color: chocolate;"> CrystalsCollector!</h1>
+
+        </div>
+
+        <div class="row">
+            <p class="col-md-8" style="background-color: lightyellow; padding:50px">
+                You will be given a random number at the start of the the game
+                There are four crystals blow. By clicking on crystal you will add a specific amount of points to
+                your total
+                score.
+                You win the game by matching your total score to random number, you lose the game if total score
+                goes above
+                the random number.
+                The value of each cristal is hidden from you until you click on it.
+                Each time when the game start,the game will change the value of each crystal.
+            </p>
+
+        </div>
+
+        <div class="row">
+            <p id="random" class="col-md-3" style=" background-color: greenyellow ; padding:30px;"></p>
+
+            <div class="col-md-3">
+                <p id="loseorwin" style="background-color: lightseagreen ; padding:20px"></p>
+
+                <p id="wins" style="background-color: lightseagreen ; padding:20px">Wins: </p>
+
+                <p id="losses" style="background-color: lightseagreen ; padding:20px">Loses:</p>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <button type="button" id="crystal1"><img src="assets/images/crystal1.jpg"></button>
+            <button type="button" id="crystal2"><img src="assets/images/crystal2.jpg"></button>
+            <button type="button" id="crystal3"><img src="assets/images/crystal3.jpg"></button>
+            <button type="button" id="crystal4"><img src="assets/images/crystal4.jpg"></button>
+
+
+
+        </div>
+        <br>
+        <div class="row">
+            <p class="col-md-3" style="background-color: limegreen;">Your Total Score is:</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3" id="totalscor" style="background-color: limegreen; padding:30px;">0 </div>
+
+
+        </div>
+
+
+</body>
+
+</html>
